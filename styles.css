@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    color: white;
+}
+
+header {
+    height: 600px;
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/os-baroes-da-pisadinha-foto-Marcelo-Batista.jpg);
+}
+
+h2 {
+    color: yellow;
+    font-size: 40pt;
+    margin: 0;
+}
+
+section {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: teal;
+    height: 500px;
+}
+
+.musicas {
+    background-color: yellowgreen;
+}
+
+.musicas div {
+    background-color: royalblue;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 350px;
+    color: white;
+    background-color: black;
+}
+
+footer div {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+}
+
+h6 {
+    margin: 0;
+}
