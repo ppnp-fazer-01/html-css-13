@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     background-color: gray;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -27,42 +28,75 @@ header {
 }
 
 h2 {
-    color: yellow;
+    color: black;
     font-size: 40pt;
     margin: 0;
 }
 
-section {
+.projetos {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     display: flex;
-    background-color: teal;
+    background-color: white;
     height: 500px;
 }
 
 .musicas {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
     background-color: yellowgreen;
 }
 
-.musicas div {
-    background-color: royalblue;
+.caixa-musicas {
+    justify-content: space-between;
+    width: 600px;
+    background-color: red;
+    display: flex;
 }
 
 footer {
     flex-direction: column;
     align-items: center;
     display: flex;
-    height: 350px;
+    height: 600px;
     color: white;
     background-color: black;
 }
 
-footer div {
-    height: 50px;
-    width: 100px;
-    background-color: red;
+input, select, textarea {
+    border: 4px solid red;
 }
+
+footer button {
+    margin-top: 15px;
+    background-color: transparent;
+    border: 4px solid red;
+    color: red;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+footer button:hover {
+    border: 4px solid yellow;
+    color: yellow;
+}
+
+.campo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+footer div form {
+    display: flex;
+    flex-direction: column;
+}
+
 
 h6 {
     margin: 0;

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Bacana</title>
 </head>
@@ -18,28 +20,69 @@
     <!-- Foto da banda -->
     <header id="sobre"></header>
     <!-- Seção de projetos -->
-    <section id="projetos">
+    <section id="projetos" class="projetos">
         <h2>Projetos</h2>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div>
+            <video width="500" height="400" controls>
+                <source src="videoplayback.mp4" type="video/mp4">
+            </video>
+        </div>
     </section>
     <section id="musicas" class="musicas">
         <h2>Músicas</h2>
-        <div>
-            <p>Piseiro em casa</p>
-        </div>
-        <div>
-            <p>Ta rocheda</p>
-        </div>
-        <div>
-            <p>Você não me deu moral</p>
+        <div class="caixa-musicas">
+            <div>
+                <p>Piseiro em casa</p>
+            </div>
+            <div>
+                <p>Ta rocheda</p>
+            </div>
+            <div>
+                <p>Você não me deu moral</p>
+            </div>
         </div>
     </section>
     <footer id="contato">
         <h6>Contato</h6>
         <div>
-            <p>11 4002-8922</p>
+            <form action="https://google.com">
+                <div class="campo">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                </div>
+
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="campo">
+                    <label>Região para show</label>
+                    <select id="regiao">
+                        <option selected disabled value="">Selecionar</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Genêro de música</label>
+                    <label>
+                        <input type="radio" name="genero" value="axe">Axé
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="forro" >Forró
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label>Mensagem</label>
+                    <textarea rows="6" name="mensagem" id="mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+
+            </form>
         </div>
     </footer>
 </body>
